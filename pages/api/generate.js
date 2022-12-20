@@ -8,7 +8,7 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Write me a detailed tutorial by a professional developer for coding in different languages.
+Write me an explantaion in detail by a professional developer for coding and tasks.
 
 `
 
@@ -27,7 +27,7 @@ const generateAction = async (req, res) => {
    // I build Prompt #2.
    const secondPrompt = 
    `
-   find code examples and tutorials for any given task
+   Explain in detail what the code means and offer an explanation regarding the task.
 
    Title: ${req.body.userInput}
  
